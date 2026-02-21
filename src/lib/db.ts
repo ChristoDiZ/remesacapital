@@ -8,7 +8,7 @@ const g = globalThis as MongooseGlobal;
 
 function getMongoUri(): string {
   const uri = process.env.MONGODB_URI;
-  if (!uri) throw new Error("MONGODB_URI no está configurado en .env.local");
+  if (!uri) throw new Error("MONGODB_URI no está configurado en variables de entorno (producción/Amplify)");
   return uri;
 }
 

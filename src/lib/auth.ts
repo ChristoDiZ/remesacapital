@@ -2,9 +2,9 @@
 const COOKIE_NAME = "admin_session";
 const ONE_WEEK_SECONDS = 60 * 60 * 24 * 7;
 
-function getSecret() {
+function getSecret(): string {
   const secret = process.env.SESSION_SECRET;
-  if (!secret) throw new Error("SESSION_SECRET no está configurado en .env.local");
+  if (!secret) throw new Error("SESSION_SECRET no está configurado en variables de entorno (producción/Amplify)");
   return secret;
 }
 
