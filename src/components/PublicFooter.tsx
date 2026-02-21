@@ -5,7 +5,7 @@ export default function PublicFooter() {
         <div>
           <p className="font-extrabold text-lg">RemesaCapital</p>
           <p className="text-white/80 text-sm mt-2">
-            Simula tu cambio CLP ↔ BOB y contacta a un ejecutivo por WhatsApp.
+            Cotiza tu cambio CLP ↔ BOB y contacta a un ejecutivo por WhatsApp.
           </p>
         </div>
 

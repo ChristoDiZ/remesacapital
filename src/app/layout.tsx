@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "RemesaCapital | Casa de Cambio",
-  description: "Simula tu cambio CLP ↔ BOB y contacta a un ejecutivo por WhatsApp.",
+  description: "cotiza tu cambio CLP ↔ BOB y contacta a un ejecutivo por WhatsApp.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

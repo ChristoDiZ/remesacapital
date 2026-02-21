@@ -280,8 +280,11 @@ export default function Simulator() {
                   <input
                     value={amount}
                     onChange={(e) => setAmount(e.target.value.replace(/[^\d]/g, ""))}
-                    className="mt-2 w-full rounded-xl bg-white border border-slate-200 px-4 py-3 outline-none focus:border-emerald-500 focus:text-slate-950"
-                    placeholder={fromCurrency === "CLP" ? "Ej: 150000" : "Ej: 500"}
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 
+             outline-none transition
+             placeholder:text-slate-400 placeholder:font-semibold placeholder:opacity-100
+             focus:border-emerald-500 focus:text-slate-950"
+  placeholder={fromCurrency === "CLP" ? "Ej: 150000" : "Ej: 500"}
                   />
                 </div>
 

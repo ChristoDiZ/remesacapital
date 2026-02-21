@@ -110,14 +110,17 @@ export default function ContactModal({
               Monto a cambiar ({fromCurrency})
             </label>
             <input
-              value={amount}
-              onChange={(e) => setAmount(e.target.value.replace(/[^\d]/g, ""))}
-              className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none focus:border-emerald-500 transition focus:text-slate-950 focus:text-slate-950"
-              placeholder={fromCurrency === "CLP" ? "Ej: 150000" : "Ej: 500"}
-            />
-            <p className="mt-2 text-[11px] text-slate-500">
-              Esta información quedará registrada para el ejecutivo.
-            </p>
+  value={amount}
+  onChange={(e) => setAmount(e.target.value.replace(/[^\d]/g, ""))}
+  className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 
+             outline-none transition
+             placeholder:text-slate-400 placeholder:font-semibold placeholder:opacity-100
+             focus:border-emerald-500 focus:text-slate-950"
+  placeholder={fromCurrency === "CLP" ? "Ej: 150000" : "Ej: 500"}
+/>
+<p className="mt-2 text-[11px] text-slate-500">
+  Esta información quedará registrada para el ejecutivo.
+</p>
           </div>
         </div>
 
