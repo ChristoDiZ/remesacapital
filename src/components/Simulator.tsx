@@ -195,7 +195,7 @@ export default function Simulator() {
   {/* 📊 Barra de estadísticas */}
 <div className="mt-10 grid grid-cols-3 gap-6 border-t border-slate-200 pt-8">
   <div>
-    <p className="text-2xl font-extrabold text-slate-900">+160</p>
+    <p className="text-2xl font-extrabold text-slate-900">+180</p>
     <p className="text-xs text-slate-500">Operaciones realizadas</p>
   </div>
 

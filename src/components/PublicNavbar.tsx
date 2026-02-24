@@ -1,19 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PublicNavbar() {
   return (
     <header className="w-full bg-white border-b border-slate-200">
       <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          {/* Logo simple */}
-          <div className="h-10 w-10 rounded-full border border-slate-200 flex items-center justify-center">
-            <span className="font-black text-emerald-700">RC</span>
-          </div>
+          {/* Logo */}
+<div className="h-10 w-10  flex items-center justify-center overflow-hidden">
+  <img
+    src="/logo1.png"
+    alt="RemesaCapital Logo"
+    className="h-12 w-12 object-contain"
+  />
+</div>
 
           <div className="leading-tight">
-            <p className="font-extrabold tracking-tight text-green-800">REMESACAPITAL</p>
+            <p className="font-extrabold tracking-tight text-slate-900">REMESA<span className="text-emerald-800 font-extrabold tracking-tight">CAPITAL</span></p>
             <p className="text-xs text-slate-500">Casa de cambio</p>
           </div>
         </Link>

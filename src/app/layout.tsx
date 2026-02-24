@@ -3,13 +3,23 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "RemesaCapital | Casa de Cambio",
-  description: "cotiza tu cambio CLP ↔ BOB y contacta a un ejecutivo por WhatsApp.",
+  description:
+    "Cotiza tu cambio CLP ↔ BOB y contacta a un ejecutivo por WhatsApp.",
+  icons: {
+    icon: "/icon.png"
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="es">
-      <body className="bg-slate-50 text-slate-900 antialiased">{children}</body>
+      <body className="bg-slate-50 text-slate-900 antialiased">
+        {children}
+      </body>
     </html>
   );
 }
